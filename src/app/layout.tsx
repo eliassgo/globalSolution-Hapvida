@@ -1,13 +1,14 @@
+import { ptBR } from '@clerk/localizations';
+import { ClerkProvider } from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
 import { Metadata } from 'next';
 import * as React from 'react';
-import { dark } from '@clerk/themes';
+
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
 import { siteConfig } from '@/constant/config';
-import { ClerkProvider } from '@clerk/nextjs';
-import { ptBR } from '@clerk/localizations';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
