@@ -1,12 +1,12 @@
-'use client';
-
-import { UserButton } from '@clerk/nextjs';
-import Head from 'next/head';
+import Image from 'next/image';
 import * as React from 'react';
 
-import ButtonLink from '@/components/links/ButtonLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
+import { Separator } from '@/components/ui/separator';
 
+import ChildCardsSection from '@/app/(home)/components/child-cards-section';
+
+import BannerHomeImage from '~/images/home/banner_home.jpg';
+import DecorationsImage from '~/images/home/decorations.png';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -14,7 +14,6 @@ import UnstyledLink from '@/components/links/UnstyledLink';
  * You can override the next-env if the type is important to you
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
-import Logo from '~/svg/Logo.svg';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -22,42 +21,39 @@ import Logo from '~/svg/Logo.svg';
 
 export default function HomePage() {
   return (
-    <main>
-      <Head>
-        <title>Hi</title>
-      </Head>
-      <section className='bg-white'>
-        <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <UserButton afterSignOutUrl='/' />
-          <Logo className='w-16' />
-          <h1 className='mt-4'>Next.js + Tailwind CSS + TypeScript Starter</h1>
-          <p className='mt-2 text-sm text-gray-800'>
-            A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-            Import, Seo, Link component, pre-configured with Husky{' '}
+    <>
+      <div className='container flex h-[700px] flex-col items-center justify-center py-20 lg:flex-row'>
+        <div className='flex flex-col items-start justify-center'>
+          <p className='mb-6 text-left text-6xl font-bold'>
+            Inovação e tecnologia moldando o futuro da saúde.
           </p>
-
-          <ButtonLink className='mt-6' href='/components' variant='light'>
-            See all components
-          </ButtonLink>
-
-          <UnstyledLink
-            href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-            className='mt-4'
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              width='92'
-              height='32'
-              src='https://vercel.com/button'
-              alt='Deploy with Vercel'
-            />
-          </UnstyledLink>
-
-          <footer className='absolute bottom-2 text-gray-700'>
-            © {new Date().getFullYear()} By{' '}
-          </footer>
+          <p className='text-muted-foreground mb-6 w-3/4 text-left text-sm'>
+            A saúde é um dos pilares fundamentais da vida humana. Não apenas ela
+            influencia diretamente nossa qualidade de vida, mas também determina
+            nossa capacidade de realizar nossos sonhos, aspirações e potencial
+            criativo.
+          </p>
+          <div className='flex items-center justify-between'></div>
         </div>
-      </section>
-    </main>
+        <div className='relative h-96 w-full'>
+          <Image
+            className='relative z-10 h-fit max-h-96 rounded-lg object-cover'
+            src={BannerHomeImage}
+            alt='Tecnologia e Sáude'
+            layout='responsive'
+            objectFit='cover'
+          />
+          <Image
+            className='absolute -bottom-16 -right-16 z-0 object-contain'
+            src={DecorationsImage}
+            alt='Decoração'
+            width={176}
+            height={176}
+          />
+        </div>
+      </div>
+      <Separator className='my-4' />
+      <ChildCardsSection />
+    </>
   );
 }
