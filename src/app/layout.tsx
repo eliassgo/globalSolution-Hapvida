@@ -6,6 +6,9 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
+import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
+
 import { siteConfig } from '@/constant/config';
 import { ThemeProvider } from '@/context/theme-provider';
 
@@ -38,7 +41,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <div className='relative flex min-h-screen flex-col'>
+              <SiteHeader />
+              <div className='flex-1'>{children}</div>
+              <SiteFooter />
+            </div>
           </ThemeProvider>
         </body>
       </html>
