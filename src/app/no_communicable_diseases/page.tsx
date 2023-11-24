@@ -23,9 +23,9 @@ import meta_ods from '~/images/sem-degrade-4.png';
 
 export default function No_Communicable_Diseases() {
   return (
-    <main className='bg-slate-200'>
+    <>
       <div className='mx-auto w-4/5 pt-20'>
-        <section className='mb-10 flex text-black'>
+        <section className='text-foreground mb-10 flex'>
           <Image
             src={banner01}
             alt='imagem de paciente sendo atendido'
@@ -56,31 +56,31 @@ export default function No_Communicable_Diseases() {
           </div>
         </section>
         <Separator className='my-5 h-0.5 bg-zinc-600 ' />
-        <div className='flex h-5 items-center space-x-4 font-bold text-black'>
+        <div className='text-foreground flex h-5 items-center space-x-4 font-bold'>
           <div>
             <h3 className='text-emerald-500 '>EXPLORE</h3>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black ' />
+          <Separator orientation='vertical' className='bg-foreground my-10 ' />
           <div className='hover:text-sky-700  hover:underline'>
             <a href=''>Saúde Mental</a>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black' />
+          <Separator orientation='vertical' className='bg-foreground my-10' />
           <div className='hover:text-sky-700 hover:underline'>
             <a href=''>Bem-estar</a>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black' />
+          <Separator orientation='vertical' className='bg-foreground my-10' />
           <div className='hover:text-sky-700 hover:underline'>
             <a href=''>Diabetes</a>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black' />
+          <Separator orientation='vertical' className='bg-foreground my-10' />
           <div className='hover:text-sky-700 hover:underline'>
             <a href=''>Trissomias</a>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black' />
+          <Separator orientation='vertical' className='bg-foreground my-10' />
           <div className='hover:text-sky-700 hover:underline'>
             <a href=''>Obesidade</a>
           </div>
-          <Separator orientation='vertical' className='my-10 bg-black' />
+          <Separator orientation='vertical' className='bg-foreground my-10' />
           <div className='hover:text-sky-700 hover:underline'>
             <a href=''>Hipertensão</a>
           </div>
@@ -112,7 +112,7 @@ export default function No_Communicable_Diseases() {
                 as mais prevalentes neste cenário estão a hipertensão, os
                 problemas de coluna, o diabetes, a artrite, o reumatismo, a
                 depressão e a asma. <br />
-                <span className='text-xs font-bold italic	text-black'>
+                <span className='text-foreground text-xs font-bold	italic'>
                   <a
                     className='hover:underline'
                     href='https://www.clinicaceu.com.br/blog/doencas-cronicas-nao-transmissiveis/'
@@ -128,7 +128,7 @@ export default function No_Communicable_Diseases() {
         </div>
       </section>
 
-      <section className='mx-auto w-3/5 text-black'>
+      <section className='text-foreground mx-auto w-3/5'>
         <article>
           <Accordion type='single' collapsible>
             <AccordionItem value='item-1'>
@@ -243,7 +243,7 @@ export default function No_Communicable_Diseases() {
       </section>
 
       <section className='my-20'>
-        <div className='mx-auto grid w-3/5 grid-cols-1 text-black'>
+        <div className='text-foreground mx-auto grid w-3/5 grid-cols-1'>
           <div>
             <h1 className='mb-5'>
               {' '}
@@ -260,7 +260,7 @@ export default function No_Communicable_Diseases() {
               melanoma, serão os de próstata e pulmão no sexo masculino e mama e
               colo do útero para o sexo feminino, acompanhando a mesma
               tendência. observada no mundo (INCA, 2005)
-              <span className='text-xs font-bold italic	text-black'>
+              <span className='text-foreground text-xs font-bold	italic'>
                 <a
                   className='hover:underline'
                   href='https://bvsms.saude.gov.br/bvs/publicacoes/DCNT.pdf'
@@ -274,7 +274,7 @@ export default function No_Communicable_Diseases() {
           </div>
           <div>
             <Overview />
-            <span className='ml-10 text-xs font-bold	italic text-black'>
+            <span className='text-foreground ml-10 text-xs	font-bold italic'>
               Fonte: Sistema de Informações de Mortalidade – Ministério da Saúde
               - 2004{' '}
             </span>
@@ -282,7 +282,7 @@ export default function No_Communicable_Diseases() {
         </div>
       </section>
 
-      <section className='mx-auto w-4/5 text-black'>
+      <section className='text-foreground mx-auto w-4/5'>
         <h3 className='text-cyan-500'>CONDIÇÕES</h3>
         <Separator className='mb-10 bg-cyan-500' />
         <div className='grid grid-cols-5 gap-x-6 text-center font-bold text-sky-950'>
@@ -308,7 +308,7 @@ export default function No_Communicable_Diseases() {
           </div>
         </div>
 
-        <section className='mx-auto mt-20 w-4/5 text-black'>
+        <section className='text-foreground mx-auto mt-20 w-4/5'>
           <div className='grid grid-cols-2 gap-x-5'>
             <div>
               <h2 className='mb-5 text-left'>
@@ -334,13 +334,13 @@ export default function No_Communicable_Diseases() {
           </div>
         </section>
       </section>
-      <section className='mx-auto w-4/5 text-black'>
+      <section className='text-foreground mx-auto w-4/5'>
         <div className='relative my-10'>
           <div className='relative flex-shrink-0'>
             <Image src={meta_ods} alt='' />
           </div>
         </div>
-        <div className=' mx-auto w-3/5 text-black'>
+        <div className=' text-foreground mx-auto w-3/5'>
           <div>
             <h1 className='mb-5'>
               {' '}
@@ -402,7 +402,7 @@ export default function No_Communicable_Diseases() {
           </div>
         </div>
       </section>
-      <section className='mx-auto mt-20 w-4/5 text-black '>
+      <section className='text-foreground mx-auto mt-20 w-4/5 '>
         <h3 className='text-cyan-500'>Aplicativos de Fitness e Bem-Estar</h3>
         <Separator className='mb-10 bg-cyan-500' />
         <div className='grid grid-cols-5 gap-x-6 text-start font-bold text-sky-950'>
@@ -491,6 +491,6 @@ export default function No_Communicable_Diseases() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
