@@ -13,18 +13,18 @@ import meta_ods from '~/images/sem-degrade-4.png';
 const Ods_section = () => {
   return (
     <>
-      <section className='text-foreground mx-auto w-4/5'>
+      <section className='text-foreground mx-auto mb-10 w-4/5 pb-20'>
         <div className='relative my-10'>
           <div className='relative flex-shrink-0'>
             <Image src={meta_ods} alt='' />
           </div>
         </div>
-        <div className=' text-foreground mx-auto w-3/5'>
+        <div className=' text-foreground lg:3/5 mx-auto w-4/5'>
           <div>
-            <h1 className='mb-5'>
+            <h1 className='mb-5 font-bold lg:text-3xl'>
               {' '}
-              Assegurar uma vida saudável e promover o bem-estar para todos, em
-              todas as idades.
+              METAS DA ODS 3: Assegurar uma vida saudável e promover o bem-estar
+              para todos, em todas as idades.
             </h1>
             <h4 className='mb-5'> Meta 3.4</h4>
             <h4 className='mb-5'> Nações Unidas</h4>
@@ -38,7 +38,7 @@ const Ods_section = () => {
             <Accordion type='single' collapsible>
               <AccordionItem value='item-1'>
                 <AccordionTrigger>
-                  <h4 className='mb-5 text-neutral-600'>
+                  <h4 className='mb-5 text-stone-300'>
                     Até 2030, reduzir em um terço a mortalidade prematura por
                     doenças não transmissíveis via prevenção e tratamento,
                     promover a saúde mental e o bem-estar, a saúde do

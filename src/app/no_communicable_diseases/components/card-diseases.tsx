@@ -20,8 +20,8 @@ import mental_health from '~/images/mental-health.png';
 import obesidade from '~/images/obesidade.png';
 const Card_diseases = () => {
   return (
-    <div className='text-foreground mx-auto w-4/5'>
-      <h3 className='text-white'>CONDIÇÕES</h3>
+    <div className='text-foreground mx-auto w-4/5 ' id='diseases'>
+      <h3 className='text-2xl text-cyan-500'>CONDIÇÕES</h3>
       <Separator className='mb-10 bg-cyan-500' />
       <div className='my-5 grid grid-cols-1 text-center font-bold text-sky-950 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4'>
         <div className='md mb-5 w-full bg-white text-center hover:bg-sky-950 hover:font-bold hover:text-red-700 hover:opacity-50'>

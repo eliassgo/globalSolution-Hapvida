@@ -17,9 +17,9 @@ const Article = () => {
           <Accordion type='single' collapsible>
             <AccordionItem value='item-1'>
               <AccordionTrigger>
-                <h2 className='mb-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
+                <p className='mb-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
                   O que é considerada uma doença crônica?
-                </h2>
+                </p>
               </AccordionTrigger>
               <AccordionContent>
                 <p>
@@ -44,9 +44,9 @@ const Article = () => {
           <Accordion type='single' collapsible>
             <AccordionItem value='item-1'>
               <AccordionTrigger>
-                <h2 className='my-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
+                <p className='my-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
                   Tipos de doenças crônicas não transmissíveis
-                </h2>
+                </p>
               </AccordionTrigger>
               <AccordionContent>
                 <p>As DCNTs podem ser agrupadas em duas categorias:</p>
@@ -83,9 +83,9 @@ const Article = () => {
           <Accordion type='single' collapsible>
             <AccordionItem value='item-1'>
               <AccordionTrigger>
-                <h2 className='my-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
+                <p className='my-5 text-neutral-600 hover:text-sky-700 lg:text-3xl'>
                   Fatores de risco
-                </h2>
+                </p>
               </AccordionTrigger>
               <AccordionContent>
                 <p>
