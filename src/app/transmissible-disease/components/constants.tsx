@@ -24,9 +24,9 @@ export const navLinks = [
     link: '/health-improvement',
   },
   {
-    id: 'no_communicable_diseases',
+    id: 'no-transmissible-disease',
     title: 'Doenças Não Transmissíveis',
-    link: '/no_communicable_diseases',
+    link: '/no-transmissible-disease',
   },
   {
     id: 'transmissible-disease',

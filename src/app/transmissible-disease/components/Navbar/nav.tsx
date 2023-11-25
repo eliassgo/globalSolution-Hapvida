@@ -54,7 +54,7 @@ const Navbar = () => {
               onClick={() => setToggle((prev) => !prev)}
             />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className='w-56'>
+          <DropdownMenuContent className='w-56 md:hidden'>
             <DropdownMenuLabel className='ml-5'>Paginas</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuRadioGroup>

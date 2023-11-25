@@ -7,7 +7,7 @@ import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 
 import GraphsImage from '~/images/home/graph-style.png';
-export default function TransmissibleDiseaseSection() {
+export default function NoTransmissibleDiseaseSection() {
   const ref = useRef(null);
   return (
     <div className='container flex flex-col items-center justify-between gap-20 py-20 lg:flex-row'>
