@@ -4,7 +4,7 @@ import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const data = [
   {
-    name: 'Ap. Circulatório',
+    name: 'Ap.Circulatório',
     total: 310,
   },
   {
@@ -16,7 +16,7 @@ const data = [
     total: 110,
   },
   {
-    name: 'X. Respiratório',
+    name: 'X.Respiratório',
     total: 100,
   },
   {
@@ -62,7 +62,7 @@ export function Overview() {
         <XAxis
           dataKey='name'
           stroke='#888888'
-          fontSize={12}
+          fontSize={8}
           tickLine={false}
           axisLine={false}
           interval={0}
@@ -71,7 +71,7 @@ export function Overview() {
           type='number'
           domain={[0, 1]}
           stroke='#888888'
-          fontSize={12}
+          fontSize={16}
           tickLine={false}
           axisLine={false}
           tickFormatter={(value) => `${value}%`}
