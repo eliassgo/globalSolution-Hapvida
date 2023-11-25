@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import {
@@ -22,9 +23,16 @@ import hapvida from '~/images/transmissible-disease/OnHapvida.png';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [link, setLink] = useState('home');
+  const router = useRouter();
 
   const handleClose = (e: boolean) => {
     setToggle(e);
+  };
+
+  const handleRedirect = (id: string) => {
+    if (id) {
+      router.push(id);
+    }
   };
 
   return (
@@ -38,8 +46,9 @@ const Navbar = () => {
             className={`font-poppins cursor-pointer text-[16px] font-normal text-white ${
               index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
             } `}
+            onClick={() => handleRedirect(nav.link)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            {nav.title}
           </li>
         ))}
       </ul>

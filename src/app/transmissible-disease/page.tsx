@@ -9,7 +9,6 @@ import {
   CTA,
   Hero,
   Stats,
-  Summarizer,
   Testimonials,
 } from './components';
 
@@ -28,7 +27,7 @@ export default function transmissible_disease() {
           <Business />
           <Billing />
           <CardDeal />
-          <Summarizer />
+          {/*<Summarizer />*/}
           <Testimonials />
           <Clients />
           <CTA />
