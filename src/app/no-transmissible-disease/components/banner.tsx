@@ -11,14 +11,14 @@ const Banner = () => {
         </div>
         <div className='md:absolute md:mr-10 md:mt-5 md:font-bold md:text-black lg:mt-20 lg:text-white'>
           <div className='mb-5 text-center md:mb-0 md:text-right '>
-            <h1 className='mb-4 text-2xl font-bold md:mb-0 md:mt-2 md:text-base lg:mb-1 lg:text-3xl'>
+            <h1 className='mb-4 text-2xl font-bold md:mb-0 md:mt-2 md:text-base lg:mb-1 lg:text-4xl'>
               Educação para a Saúde:
             </h1>
-            <h1 className='text-2xl font-bold md:text-base lg:mb-3 lg:text-4xl'>
+            <h1 className='text-2xl font-bold md:text-base lg:mb-3 lg:text-5xl'>
               Doenças Não Transmissíveis
             </h1>
           </div>
-          <div className='mx-auto text-center md:flex md:justify-end md:text-right md:text-xs lg:text-base'>
+          <div className='mx-auto text-center md:flex md:justify-end md:text-right md:text-xs lg:text-xl'>
             <p className='md:w-2/4'>
               As doenças crônicas vitimam 38 milhões de pessoas ao redor do
               planeta e são a maior causa de morte em todo o mundo. Apesar de
