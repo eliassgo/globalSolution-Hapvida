@@ -9,6 +9,11 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
+import AguaImage from '~/images/health-improvement/agua.png';
+import BannerImage from '~/images/health-improvement/banner.png';
+import ExercicioImage from '~/images/health-improvement/exercicio.png';
+import MentalImage from '~/images/health-improvement/mental.png';
+
 const HealthImprovementPage: React.FC = () => {
   return (
     <div className='container mx-auto mt-8 p-8 text-center'>
@@ -20,23 +25,18 @@ const HealthImprovementPage: React.FC = () => {
         />
       </Head>
       <h1 className='mb-6 text-4xl font-bold'>Melhoria Geral da Saúde</h1>
-
-      {}
       <div className='mb-8'>
         <Image
-          src='/images/banner-healthimprovement.png'
+          src={BannerImage}
           alt='Banner Melhoria da Saúde'
           className='w-full rounded-lg'
         />
       </div>
-
-      {}
       <div className='mb-8 flex items-center justify-center'>
-        {}
         <div className='mx-4 flex-1' style={{ width: '33%' }}>
           <div style={{ height: '180px' }}>
             <Image
-              src='/images/agua.png'
+              src={AguaImage}
               alt='Imagem 1'
               className='mb-2 h-full w-full rounded-full'
             />
@@ -47,12 +47,10 @@ const HealthImprovementPage: React.FC = () => {
             adequadamente.
           </p>
         </div>
-
-        {}
         <div className='mx-4 flex-1' style={{ width: '33%' }}>
           <div style={{ height: '180px' }}>
             <Image
-              src='/images/mental.png'
+              src={MentalImage}
               alt='Imagem 2'
               className='mb-2 h-full w-full rounded-full'
             />
@@ -63,11 +61,10 @@ const HealthImprovementPage: React.FC = () => {
           </p>
         </div>
 
-        {}
         <div className='mx-4 flex-1' style={{ width: '33%' }}>
           <div style={{ height: '180px' }}>
             <Image
-              src='/images/exercicio.png'
+              src={ExercicioImage}
               alt='Imagem 3'
               className='mb-2 h-full w-full rounded-full'
             />
@@ -116,7 +113,6 @@ const HealthImprovementPage: React.FC = () => {
                   cognitivo. A desidratação pode <br /> levar à diminuição da
                   concentração, fadiga e dores de cabeça.
                 </p>
-                {}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
