@@ -16,8 +16,8 @@ import {
 
 import { navLinks } from '@/app/transmissible-disease/components/constants';
 
-import close from '~/images/transmissible-disease/close.svg';
-import menu from '~/images/transmissible-disease/menu.svg';
+import close from '~/images/transmissible-disease/close.png';
+import menu from '~/images/transmissible-disease/menu.png';
 import hapvida from '~/images/transmissible-disease/OnHapvida.png';
 
 const Navbar = () => {
