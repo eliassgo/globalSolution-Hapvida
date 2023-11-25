@@ -8,6 +8,7 @@ import '@/styles/globals.css';
 
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
+import { Separator } from '@/components/ui/separator';
 
 import { siteConfig } from '@/constant/config';
 import { ThemeProvider } from '@/context/theme-provider';
@@ -44,6 +45,7 @@ export default function RootLayout({
             <div className='relative flex min-h-screen flex-col'>
               <SiteHeader />
               <div className='flex-1'>{children}</div>
+              <Separator className='my-4' />
               <SiteFooter />
             </div>
           </ThemeProvider>

@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import ChildCardsSection from '@/app/(home)/components/child-cards-section';
 import HealthImprovementSection from '@/app/(home)/components/health-improvement-section';
 import PrincipalSection from '@/app/(home)/components/principal-section';
+import TransmissibleDiseaseSection from '@/app/(home)/components/transmissible-disease-section';
 
 /**
  * SVGR Support
@@ -24,7 +25,10 @@ export default function HomePage() {
       <PrincipalSection />
       <Separator className='my-4' />
       <ChildCardsSection />
+      <Separator className='my-4' />
       <HealthImprovementSection />
+      <Separator className='my-4' />
+      <TransmissibleDiseaseSection />
     </>
   );
 }

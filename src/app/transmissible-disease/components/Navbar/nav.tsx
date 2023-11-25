@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import {
@@ -22,17 +22,9 @@ import hapvida from '~/images/transmissible-disease/OnHapvida.png';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const [link, setLink] = useState('home');
-  const router = useRouter();
 
   const handleClose = (e: boolean) => {
     setToggle(e);
-  };
-
-  const handleRedirect = (id: string) => {
-    if (id) {
-      router.push(id);
-    }
   };
 
   return (
@@ -46,14 +38,13 @@ const Navbar = () => {
             className={`font-poppins cursor-pointer text-[16px] font-normal text-white ${
               index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
             } `}
-            onClick={() => handleRedirect(nav.link)}
           >
-            {nav.title}
+            <Link href={nav.link}>{nav.title}</Link>
           </li>
         ))}
       </ul>
 
-      <div className='flex flex-1 items-center justify-end sm:hidden'>
+      <div className='flex flex-1 items-center justify-end md:hidden'>
         <DropdownMenu onOpenChange={handleClose}>
           <DropdownMenuTrigger asChild>
             <Image
@@ -66,10 +57,10 @@ const Navbar = () => {
           <DropdownMenuContent className='w-56'>
             <DropdownMenuLabel className='ml-5'>Paginas</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuRadioGroup value={link} onValueChange={setLink}>
+            <DropdownMenuRadioGroup>
               {navLinks.map((nav, index) => (
                 <DropdownMenuRadioItem key={index} value={nav.id}>
-                  {nav.title}
+                  <Link href={nav.link}>{nav.title}</Link>
                 </DropdownMenuRadioItem>
               ))}
             </DropdownMenuRadioGroup>
