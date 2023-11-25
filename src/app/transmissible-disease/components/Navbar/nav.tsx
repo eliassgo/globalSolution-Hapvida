@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,16 +32,17 @@ const Navbar = () => {
     <nav className='navbar flex w-full items-center justify-between py-6'>
       <Image src={hapvida} alt='logo' className='h-[42px] w-[124px]' />
 
-      <ul className='hidden flex-1 list-none items-center justify-end sm:flex'>
+      <ul className='hidden flex-1 list-none items-center justify-end md:flex'>
         {navLinks.map((nav, index) => (
-          <li
+          <Button
             key={index}
-            className={`font-poppins cursor-pointer text-[16px] font-normal text-white ${
-              index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-            } `}
+            variant={nav.isVideoPitch ? 'default' : 'ghost'}
+            asChild
           >
-            <Link href={nav.link}>{nav.title}</Link>
-          </li>
+            <li>
+              <Link href={nav.link}>{nav.title}</Link>
+            </li>
+          </Button>
         ))}
       </ul>
 
@@ -54,12 +56,20 @@ const Navbar = () => {
               onClick={() => setToggle((prev) => !prev)}
             />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className='w-56 md:hidden'>
+          <DropdownMenuContent className='bg-background mr-4 w-60'>
             <DropdownMenuLabel className='ml-5'>Paginas</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuRadioGroup>
               {navLinks.map((nav, index) => (
-                <DropdownMenuRadioItem key={index} value={nav.id}>
+                <DropdownMenuRadioItem
+                  className={
+                    nav.isVideoPitch
+                      ? 'bg-primary text-primary-foreground font-bold'
+                      : ''
+                  }
+                  key={index}
+                  value={nav.id}
+                >
                   <Link href={nav.link}>{nav.title}</Link>
                 </DropdownMenuRadioItem>
               ))}

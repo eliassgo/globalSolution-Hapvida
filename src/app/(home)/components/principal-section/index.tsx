@@ -9,7 +9,7 @@ import ZattiniImage from '~/images/home/logo-zattini.jpg';
 
 export default function PrincipalSection() {
   return (
-    <div className='container flex h-[700px] flex-col items-center justify-center py-20 lg:flex-row'>
+    <div className='container mt-6 flex h-[700px] flex-col items-center justify-center py-20 md:mt-0 lg:flex-row'>
       <div className='flex flex-col items-start justify-center'>
         <p className='mb-6 text-left text-6xl font-bold'>
           Inovação e tecnologia moldando o futuro da saúde.

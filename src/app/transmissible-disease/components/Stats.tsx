@@ -111,7 +111,7 @@ export const Stats = () => (
                 {stat.title}
               </p>
             </NavigationMenuTrigger>
-            <NavigationMenuContent>
+            <NavigationMenuContent className='bg-background'>
               <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
                 {stat.subCategory.map((sub, index) =>
                   sub.url ? (

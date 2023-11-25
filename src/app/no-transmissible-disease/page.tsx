@@ -10,20 +10,20 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
-import Article from '@/app/no_communicable_diseases/components/article';
-import Banner from '@/app/no_communicable_diseases/components/banner';
-import Card_diseases from '@/app/no_communicable_diseases/components/card-diseases';
-import Hero from '@/app/no_communicable_diseases/components/hero';
-import IMCCalculator from '@/app/no_communicable_diseases/components/imcCalculator';
-import Living_health from '@/app/no_communicable_diseases/components/living_health';
-import Ods_section from '@/app/no_communicable_diseases/components/ods_section';
+import Article from '@/app/no-transmissible-disease/components/article';
+import Banner from '@/app/no-transmissible-disease/components/banner';
+import Card_diseases from '@/app/no-transmissible-disease/components/card-diseases';
+import Hero from '@/app/no-transmissible-disease/components/hero';
+import IMCCalculator from '@/app/no-transmissible-disease/components/imcCalculator';
+import Living_health from '@/app/no-transmissible-disease/components/living_health';
+import Ods_section from '@/app/no-transmissible-disease/components/ods_section';
 
 import depression_men from '~/images/depression_men.png';
 import media_holiday from '~/images/media_holidays.png';
 import soup from '~/images/soup.png';
 import understanding from '~/images/understanding.png';
 
-export default function No_Communicable_Diseases() {
+export default function NoTrnasmissibleDisease() {
   return (
     <>
       <div className='mx-auto w-4/5 pt-20'>

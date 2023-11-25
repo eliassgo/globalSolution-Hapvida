@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import { Overview } from '@/app/no_communicable_diseases/components/overview';
+import { Overview } from '@/app/no-transmissible-disease/components/overview';
 
 const Article = () => {
   return (

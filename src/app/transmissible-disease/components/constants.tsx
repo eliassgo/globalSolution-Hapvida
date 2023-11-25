@@ -1,6 +1,6 @@
-import Send from '@/app/transmissible-disease/components/Icons/Send';
-import Shield from '@/app/transmissible-disease/components/Icons/Shield';
-import Star from '@/app/transmissible-disease/components/Icons/Star';
+import Send from '@/components/Icons/Send';
+import Shield from '@/components/Icons/Shield';
+import Star from '@/components/Icons/Star';
 
 import facebook from '~/images/transmissible-disease/facebook.png';
 import hapvida from '~/images/transmissible-disease/hapvida.png';
@@ -17,21 +17,37 @@ export const navLinks = [
     id: 'home',
     title: 'Home',
     link: '/',
+    isVideoPitch: false,
   },
   {
     id: 'health-improvement',
     title: 'Melhoria de Vida',
     link: '/health-improvement',
+    isVideoPitch: false,
   },
   {
     id: 'no-transmissible-disease',
     title: 'Doenças Não Transmissíveis',
     link: '/no-transmissible-disease',
+    isVideoPitch: false,
   },
   {
     id: 'transmissible-disease',
     title: 'Doenças Transmissíveis',
     link: '/transmissible-disease',
+    isVideoPitch: false,
+  },
+  {
+    id: 'reduction-mortality',
+    title: 'Mortalidade Infantil',
+    link: '/reduction-mortality',
+    isVideoPitch: false,
+  },
+  {
+    id: 'video-pitch',
+    title: 'Video PITCH',
+    link: '/video-pitch',
+    isVideoPitch: true,
   },
 ];
 
@@ -193,26 +209,31 @@ export const footerLinks = [
         id: 'home',
         name: 'Home',
         link: '/',
+        isVideoPitch: false,
       },
       {
         id: 'health-improvement',
         name: 'Melhoria de Vida',
         link: '/health-improvement',
+        isVideoPitch: false,
       },
       {
-        id: 'no_communicable_diseases',
+        id: 'no-transmissible-disease',
         name: 'Doenças Não Transmissíveis',
-        link: '/no_communicable_diseases',
+        link: '/no-transmissible-disease',
+        isVideoPitch: false,
       },
       {
         id: 'transmissible-disease',
         name: 'Doenças Transmissíveis',
         link: '/transmissible-disease',
+        isVideoPitch: false,
       },
       {
         id: 'reduction-mortality',
         name: 'Redução da Mortalidade',
-        link: '/reduction-mortality',
+        link: 'https://www.youtube.com/watch?v=kOLepZZLj_c&ab_channel=VictorHugoSakurai',
+        isVideoPitch: true,
       },
     ],
   },

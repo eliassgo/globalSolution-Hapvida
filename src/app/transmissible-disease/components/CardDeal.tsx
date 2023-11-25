@@ -1,8 +1,9 @@
 'use client';
 import Image from 'next/image';
 
-import Apple from '@/app/transmissible-disease/components/Icons/Apple';
-import Google from '@/app/transmissible-disease/components/Icons/Google';
+import Apple from '@/components/Icons/Apple';
+import Google from '@/components/Icons/Google';
+
 import styles, { layout } from '@/constant/style';
 
 import app from '~/images/transmissible-disease/app.png';

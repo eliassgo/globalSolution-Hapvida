@@ -32,7 +32,7 @@ export default function NoTransmissibleDiseaseSection() {
           receber informações valiosas sobre como construir uma jornada de
           bem-estar duradouro.
         </p>
-        <Link href='/transmissible-disease' ref={ref}>
+        <Link href='/no-transmissible-disease' ref={ref}>
           <Button variant='link'>
             Veja mais
             <ArrowRightIcon className='ml-2 h-4 w-4' />

@@ -1,7 +1,7 @@
 'use client';
 import Image, { StaticImageData } from 'next/image';
 
-import Quotes from '@/app/transmissible-disease/components/Icons/Quotes';
+import Quotes from '@/components/Icons/Quotes';
 
 type Feedback = {
   id: string;
