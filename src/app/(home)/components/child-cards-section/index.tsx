@@ -1,10 +1,11 @@
 'use client';
+import { ArrowRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
 
 import { Button } from '@/components/ui/button';
 
-import ChildCard from '@/app/(home)/components/child-card';
+import ChildCard from '@/app/(home)/components/child-cards-section/child-card';
 
 import ChildrenTecOneImage from '~/images/home/children-tec-1.jpg';
 import ChildrenTecTwoImage from '~/images/home/children-tec-2.jpeg';
@@ -50,7 +51,10 @@ export default function ChildCardsSection() {
           saúde global e no bem-estar infantil.
         </p>
         <Link href='/reduction-mortality'>
-          <Button>Veja mais</Button>
+          <Button variant='link'>
+            Veja mais
+            <ArrowRightIcon className='ml-2 h-4 w-4' />
+          </Button>
         </Link>
         <div className='h-1 w-full' ref={ref} />
       </div>
