@@ -9,7 +9,7 @@ import {
   Testimonials,
 } from './components';
 
-const Reduction_Mortality = () => {
+const ReductionMortality = () => {
   return (
     <div className='w-full overflow-hidden'>
       <div className={`${styles.flexStart}`}>
@@ -32,4 +32,4 @@ const Reduction_Mortality = () => {
   );
 };
 
-export default Reduction_Mortality;
+export default ReductionMortality;
