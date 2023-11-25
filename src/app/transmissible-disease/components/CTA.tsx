@@ -10,22 +10,18 @@ export const CTA = () => (
   >
     <div className='flex flex-1 flex-col'>
       <h2 className={styles.heading2}>
-        Saúde em Foco: Prevenção de Doenças Transmissíveis com Hapvida
+        Objetivos de desenvolvimento sustentável
       </h2>
       <p className={`${styles.paragraph} mt-5 max-w-[5000px]`}>
-        Explore conosco o universo da prevenção de doenças transmissíveis
-        através dos serviços inovadores da Hapvida. Descubra como nossos
-        aplicativos facilitam a localização de centros de saúde, proporcionando
-        acesso fácil e ágil a serviços médicos essenciais. Além disso, explore
-        as vantagens da telemedicina, ferramenta valiosa especialmente para
-        áreas remotas. Esteja à frente na prevenção, conte com a expertise da
-        Hapvida na sua jornada para uma vida mais saudável e protegida.
+        Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e
+        doenças tropicais negligenciadas, e combater a hepatite, doenças
+        transmitidas pela água, e outras doenças transmissíveis.
       </p>
     </div>
     <div className={`${styles.flexCenter} ml-0 mt-10 sm:ml-10 sm:mt-0`}>
       <Button
         styles='text-black'
-        href='https://hapvida.com.br/'
+        href='https://www.ipea.gov.br/ods/ods3.html#coll_3_3'
         text='Saiba mais'
       />
     </div>

@@ -12,37 +12,26 @@ import people02 from '~/images/transmissible-disease/people02.png';
 import people03 from '~/images/transmissible-disease/people03.png';
 import twitter from '~/images/transmissible-disease/twitter.png';
 
-// import {
-//   people01,
-//   people02,
-//   people03,
-//   facebook,
-//   instagram,
-//   linkedin,
-//   twitter,
-//   send,
-//   shield,
-//   star,
-//   hapvida,
-//   notreDame,
-// } from "../../../../public/images/transmissible-disease";
-
 export const navLinks = [
   {
     id: 'home',
     title: 'Home',
+    link: '/',
   },
   {
-    id: 'features',
-    title: 'Features',
+    id: 'health-improvement',
+    title: 'Melhoria de Vida',
+    link: '/health-improvement',
   },
   {
-    id: 'product',
-    title: 'Product',
+    id: 'no_communicable_diseases',
+    title: 'Doenças Não Transmissíveis',
+    link: '/no_communicable_diseases',
   },
   {
-    id: 'clients',
-    title: 'Clients',
+    id: 'transmissible-disease',
+    title: 'Doenças Transmissíveis',
+    link: '/transmissible-disease',
   },
 ];
 
@@ -201,24 +190,29 @@ export const footerLinks = [
     title: 'Useful Links',
     links: [
       {
-        name: 'Content',
-        link: 'https://www.hoobank.com/content/',
+        id: 'home',
+        name: 'Home',
+        link: '/',
       },
       {
-        name: 'How it Works',
-        link: 'https://www.hoobank.com/how-it-works/',
+        id: 'health-improvement',
+        name: 'Melhoria de Vida',
+        link: '/health-improvement',
       },
       {
-        name: 'Create',
-        link: 'https://www.hoobank.com/create/',
+        id: 'no_communicable_diseases',
+        name: 'Doenças Não Transmissíveis',
+        link: '/no_communicable_diseases',
       },
       {
-        name: 'Explore',
-        link: 'https://www.hoobank.com/explore/',
+        id: 'transmissible-disease',
+        name: 'Doenças Transmissíveis',
+        link: '/transmissible-disease',
       },
       {
-        name: 'Terms & Services',
-        link: 'https://www.hoobank.com/terms-and-services/',
+        id: 'reduction-mortality',
+        name: 'Redução da Mortalidade',
+        link: '/reduction-mortality',
       },
     ],
   },
@@ -226,24 +220,20 @@ export const footerLinks = [
     title: 'Community',
     links: [
       {
-        name: 'Help Center',
-        link: 'https://www.hoobank.com/help-center/',
+        name: 'Centro de ajuda',
+        anchor: 'https://www.hapvida.com.br/site/central_de_ajuda',
       },
       {
-        name: 'Partners',
-        link: 'https://www.hoobank.com/partners/',
+        name: 'Consultas',
+        anchor: 'https://www.hapvida.com.br/site/consultas',
       },
       {
         name: 'Suggestions',
-        link: 'https://www.hoobank.com/suggestions/',
+        anchor: 'https://www.hapvida.com.br/site/ouvidoria',
       },
       {
         name: 'Blog',
-        link: 'https://www.hoobank.com/blog/',
-      },
-      {
-        name: 'Newsletters',
-        link: 'https://www.hoobank.com/newsletters/',
+        anchor: 'https://www.hapvida.com.br/site/rede-exclusiva',
       },
     ],
   },
@@ -251,12 +241,12 @@ export const footerLinks = [
     title: 'Partner',
     links: [
       {
-        name: 'Our Partner',
-        link: 'https://www.hoobank.com/our-partner/',
+        name: 'Nossos parceiros',
+        anchor: 'https://clube.hapvidandi.com.br/',
       },
       {
-        name: 'Become a Partner',
-        link: 'https://www.hoobank.com/become-a-partner/',
+        name: 'Seja um parceiro',
+        anchor: 'https://clube.hapvidandi.com.br/contato/',
       },
     ],
   },

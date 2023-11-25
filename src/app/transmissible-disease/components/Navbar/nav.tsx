@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import {
@@ -15,13 +16,12 @@ import {
 
 import { navLinks } from '@/app/transmissible-disease/components/constants';
 
-import close from '~/images/transmissible-disease/close.svg';
-import menu from '~/images/transmissible-disease/menu.svg';
+import close from '~/images/transmissible-disease/close.png';
+import menu from '~/images/transmissible-disease/menu.png';
 import hapvida from '~/images/transmissible-disease/OnHapvida.png';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const [link, setLink] = useState('home');
 
   const handleClose = (e: boolean) => {
     setToggle(e);
@@ -39,12 +39,12 @@ const Navbar = () => {
               index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
             } `}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link href={nav.link}>{nav.title}</Link>
           </li>
         ))}
       </ul>
 
-      <div className='flex flex-1 items-center justify-end sm:hidden'>
+      <div className='flex flex-1 items-center justify-end md:hidden'>
         <DropdownMenu onOpenChange={handleClose}>
           <DropdownMenuTrigger asChild>
             <Image
@@ -57,10 +57,10 @@ const Navbar = () => {
           <DropdownMenuContent className='w-56'>
             <DropdownMenuLabel className='ml-5'>Paginas</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuRadioGroup value={link} onValueChange={setLink}>
+            <DropdownMenuRadioGroup>
               {navLinks.map((nav, index) => (
                 <DropdownMenuRadioItem key={index} value={nav.id}>
-                  {nav.title}
+                  <Link href={nav.link}>{nav.title}</Link>
                 </DropdownMenuRadioItem>
               ))}
             </DropdownMenuRadioGroup>

@@ -13,7 +13,7 @@ export const Button = (props: {
   return (
     <button
       type='button'
-      className={`bg-blue-gradient font-poppins text-primary px-6 py-4 text-[18px] font-medium outline-none ${styles} rounded`}
+      className={`bg-blue-gradient font-poppins px-6 py-4 text-[18px] font-medium text-black outline-none ${styles} rounded`}
       onClick={redirecionarParaSiteExterno}
     >
       {props.text ? props.text : 'Get Started'}
